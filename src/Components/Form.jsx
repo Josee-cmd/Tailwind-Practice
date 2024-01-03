@@ -8,7 +8,7 @@ function Form() {
           className="border border-gray-300 p-2 my-2 rounded-lg outline-none lg:mx-4 pl-4 lg:p-3"
         />
         <input
-          type="text"
+          type="password"
           placeholder="Contraseña"
           className="border border-gray-300 p-2 my-2 rounded-lg outline-none lg:mx-4 pl-4 lg:p-3"
         />
