@@ -5,14 +5,14 @@ function Form() {
         <input
           type="text"
           placeholder="Correo electrónico o número de teléfono"
-          className="border border-gray-300 p-2 my-2 rounded-lg outline-none lg:mx-4 pl-4 lg:p-3 mx-3"
+          className="border border-gray-300 p-2 my-2 rounded-lg outline-none lg:mx-4 pl-4 lg:p-3"
         />
         <input
           type="password"
           placeholder="Contraseña"
-          className="border border-gray-300 p-2 my-2 rounded-lg outline-none lg:mx-4 pl-4 lg:p-3 mx-3"
+          className="border border-gray-300 p-2 my-2 rounded-lg outline-none lg:mx-4 pl-4 lg:p-3"
         />
-        <button className="p-2 bg-blue-500 text-white lg:mx-4 rounded-lg mt-4 lg:p-3 text-xl font-bold mx-3 ">
+        <button className="p-2 bg-blue-500 text-white lg:mx-4 rounded-lg mt-4 lg:p-3 text-xl font-bold">
           Iniciar sesión
         </button>
         <h3 className="text-center cursor-pointer text-blue-700 my-5 ">
