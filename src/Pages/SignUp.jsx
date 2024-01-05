@@ -10,7 +10,7 @@ function SignUp() {
       className="w-96 h-5/6 border border-white grid grid-cols-2 grid-rows-7 lg:bg-white shadow-2xl shadow-black-500 rounded-xl"
     >
       <div className="row-span-1 col-span-2 ">
-        <h1 className="text-4xl font-bold pl-3">Registrarte</h1>
+        <h1 className="text-4xl font-bold pl-3 my-1">Registrarte</h1>
         <h4 className="font-light pl-3">Es rápido y fácil</h4>
       </div>
       <div className="col-span-2 h-20 flex items-center justify-center gap-3 flex-wrap border-t border-gray-300 ">
