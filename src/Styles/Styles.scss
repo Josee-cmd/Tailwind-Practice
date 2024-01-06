@@ -1,3 +1,32 @@
+@use "MixinsStyles";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+select {
+  appearance: none;
+  outline: 0;
+  box-shadow: 0;
+  border: 0px;
+  background: #fff;
+  background-image: none;
+  transition: 0.25 all ease;
+}
+
+.container::after {
+  content: "\25BC";
+  width: 2em;
+  height: 1.6em;
+  @include MixinsStyles.create-flexblox(center);
+  background: rgb(191, 191, 191);
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  pointer-events: none;
+  top:0.1px;
+  right: 0;
+}
+.container:hover::after {
+  color: #22c55e;
+}
+

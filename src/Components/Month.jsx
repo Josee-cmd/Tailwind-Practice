@@ -1,14 +1,31 @@
 export function Month() {
-    const month = [
-    "Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"
-    ];
-  
-    return <div className=" w-28 h-7 overflow-y-scroll border border-gray-300 rounded-md ease-in hover:h-72 duration-300 bg-white relative">
-        {month.map((element)=>(
-            <div key = {element} className="pl-2 cursor-pointer ">
-                <p>{element}</p>
-            </div>
+  const month = [
+    "Enero",
+    "Febrero",
+    "Marzo",
+    "Abril",
+    "Mayo",
+    "Junio",
+    "Julio",
+    "Agosto",
+    "Septiembre",
+    "Octubre",
+    "Noviembre",
+    "Diciembre",
+  ];
+
+  return (
+    <div className=" container w-36 h-7 border border-gray-300 rounded-md bg-white mx-2 flex justify-center items-cente relative">
+      <select name="" id="" className="w-full flex justify-start pl-2">
+        <option value="" selected disabled>
+          Mes
+        </option>
+        {month.map((element) => (
+          <option key={element} value={element}>
+            {element}
+          </option>
         ))}
-    </div>;
-  }
-  
+      </select>
+    </div>
+  );
+}
