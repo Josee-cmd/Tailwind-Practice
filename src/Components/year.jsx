@@ -6,7 +6,7 @@ export function Year() {
 
   return (
     <div className=" container w-28 h-7 border border-gray-300 rounded-md bg-white mx-2 flex justify-center items-center relative">
-      <select name="" className="w-full flex justify-start pl-2">
+      <select name="" className="w-full flex justify-start pl-2" defaultValue={""}>
         <option value="" disabled>
           Año
         </option>
