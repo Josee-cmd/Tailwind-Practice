@@ -16,7 +16,7 @@ select {
 .container::after {
   content: "\25BC";
   width: 2em;
-  height: 1.6em;
+  height: 1.7em;
   @include MixinsStyles.create-flexblox(center);
   background: rgb(191, 191, 191);
   color: #fff;
@@ -25,6 +25,7 @@ select {
   pointer-events: none;
   top:0.1px;
   right: 0;
+  border-radius: 0.32rem
 }
 .container:hover::after {
   color: #22c55e;

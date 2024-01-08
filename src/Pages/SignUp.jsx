@@ -40,16 +40,18 @@ function SignUp() {
         />
       </div>
 
-      <div className="col-span-2  flex items-center justify-between relative ">
-          <label
-            htmlFor=""
-            className="text-xs absolute bottom-16 pl-2 text-gray-500"
-          >
-            <b>Fecha de nacimiento ?</b>
-          </label>
-        <Days />
-        <Month />
-        <Year />
+      <div className="col-span-2 ">
+        <label
+          htmlFor=""
+          className="text-xs pl-2 text-gray-500"
+        >
+          <b>Fecha de nacimiento ?</b>
+        </label>
+        <div className=" flex items-center justify-between ">
+          <Days />
+          <Month />
+          <Year />
+        </div>
       </div>
       <div className=" col-span-2">
         <label htmlFor="" className="text-xs text-gray-500 pl-2">
