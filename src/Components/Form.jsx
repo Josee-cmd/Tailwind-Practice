@@ -1,23 +1,42 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
+
 function Form() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
   return (
-    <div className="max-w-sm flex justify-center items-center  lg:bg-white lg:h-96 rounded-md lg:shadow-2xl lg:shadow-black-500 lg:mx-10 ">
-      <form action="" className="flex flex-col lg:w-96 lg:mb-5 w-72 ">
+    <div className="max-w-sm flex justify-center items-center lg:bg-white lg:h-96 rounded-md lg:shadow-2xl lg:shadow-black-500 lg:mx-10 ">
+      <form className="flex flex-col lg:w-96 lg:mb-5 w-72 ">
         <input
           type="text"
           placeholder="Correo electrónico o número de teléfono"
           autoFocus
+          value={email}
+          onChange={handleEmailChange}
           className="border border-gray-300 p-2 my-2 rounded-lg outline-none lg:mx-4 pl-4 lg:p-3 focus:border-blue-500"
         />
         <input
           type="password"
           placeholder="Contraseña"
+          value={password}
+          onChange={handlePasswordChange}
           className="border border-gray-300 p-2 my-2 rounded-lg outline-none lg:mx-4 pl-4 lg:p-3 focus:border-blue-500"
-          
         />
-        <button className="p-2 bg-blue-500 text-white lg:mx-4 rounded-lg mt-4 lg:p-3 text-xl font-bold">
+        <Link
+        to = "/Tailwind-Practice/panel"
+        className="p-2 bg-blue-500 text-white lg:mx-4 rounded-lg mt-4 lg:p-3 text-xl font-bold text-center"
+        >
           Iniciar sesión
-        </button>
+        </Link>
         <h3 className="text-center cursor-pointer text-blue-700 my-5 ">
           ¿Has olvidado la contraseña?
         </h3>
@@ -37,5 +56,6 @@ function Form() {
     </div>
   );
 }
+
 
 export default Form;

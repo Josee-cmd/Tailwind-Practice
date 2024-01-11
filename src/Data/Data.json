@@ -1,0 +1,11 @@
+[
+  {
+    "Nombre": "Jose",
+    "Apellido": "Salcedo",
+    "Edad": "20",
+    "Correo": "josesslcedo@gmail.com",
+    "Contraseña":"1234",
+    "Nacimiento": ["16","06","2003"],
+    "Genero": "Hombre"
+  }
+]

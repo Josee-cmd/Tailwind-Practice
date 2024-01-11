@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  overflow: hidden;
+}
+
 select {
   appearance: none;
   outline: 0;
@@ -23,11 +27,37 @@ select {
   cursor: pointer;
   position: absolute;
   pointer-events: none;
-  top:0.1px;
+  top: 0.1px;
   right: 0;
-  border-radius: 0.32rem
+  border-radius: 0.32rem;
 }
 .container:hover::after {
   color: #22c55e;
 }
 
+@media (0px <= width <= 768px) {
+
+  li{
+    visibility: hidden;
+  }
+  .icons{
+    visibility: visible;
+  
+  }
+  .gear::after{
+    content: "Confi";
+    padding-left: 1.5px;
+  }
+  .account::after{
+    content: "Cuen";
+  }
+}
+
+@media (width >= 768px) {
+  .gear::after{
+    content: "Configuraciones";
+  }
+  .account::after{
+    content: "Cuenta";
+  }
+}
