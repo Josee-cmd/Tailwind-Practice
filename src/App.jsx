@@ -32,7 +32,7 @@ function App() {
             />
           }
         >
-          <Route path="/Tailwind-Practice/panel/" element={<NavBar />}>
+          <Route path="/Tailwind-Practice/panel" element={<NavBar />}>
             <Route path = "home" element = {<Panel/>}/>
             <Route path="User-Setting" element={<Setting />}></Route>
           </Route>
