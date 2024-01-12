@@ -12,10 +12,12 @@ import {
 function NavBar() {
   const css = "icons lg:text-xl lg:pr-2";
   return (
-    <div className="w-full h-full grid grid-rows-2 border-0">
+    <div className="w-full h-full grid grid-rows-2 border border-black">
+      <div className="h-full border border-red-500 row-span-2">
       <Outlet />
-      <nav className="w-full h-full my-2 flex flex-wrap">
-        <ul className="w-full flex justify-center h-full items-end pl-10 gap-5">
+      </div>
+      <nav className="w-full h-full border border-black flex items-end ">
+        <ul className="w-full h-auto flex pl-10 gap-5 border border-blue-500 ">
           <li>
             <Link to="home">
               <Icons
@@ -37,14 +39,7 @@ function NavBar() {
                 icon={faGear}
               />
             </Link>
-            <ul
-              className={`items list-disc flex flex-col mx-5 flex-wrap invisible opacity-0 h-50 border border-black absolute`}
-            >
-              <li>Display</li>
-              <li>Editor</li>
-              <li>Theme</li>
-              <li>Interface</li>
-            </ul>
+
           </li>
           <li>
             <Link to="user-create">

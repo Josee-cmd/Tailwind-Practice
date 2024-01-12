@@ -3,8 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  overflow: hidden;
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 select {
@@ -16,6 +19,7 @@ select {
   background-image: none;
   transition: 0.25 all ease;
 }
+
 
 .container::after {
   content: "\25BC";
@@ -43,6 +47,8 @@ select {
   .icons{
     visibility: visible;
     font-size: 25px;
+    position: relative;
+    top:10px
   }
   .gear::after{
     content: "Confi";
