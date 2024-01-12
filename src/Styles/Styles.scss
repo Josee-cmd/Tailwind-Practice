@@ -9,7 +9,9 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
+body{
+  overflow: hidden;
+}
 select {
   appearance: none;
   outline: 0;
