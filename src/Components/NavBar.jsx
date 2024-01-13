@@ -16,8 +16,8 @@ function NavBar() {
       <div className="h-full row-span-2">
       <Outlet />
       </div>
-      <nav className="w-full h-full flex items-end ">
-        <ul className="w-full h-auto flex pl-10 gap-5  ">
+      <nav className="w-full h-full flex items-end border-t-2 border-gray-400 rounded-2xl ">
+        <ul className="w-full h-auto flex pl-10 gap-5 justify-center ">
           <li>
             <Link to="home">
               <Icons
@@ -39,7 +39,6 @@ function NavBar() {
                 icon={faGear}
               />
             </Link>
-
           </li>
           <li>
             <Link to="user-create">

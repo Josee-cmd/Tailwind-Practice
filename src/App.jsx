@@ -18,7 +18,7 @@ function App() {
   }, []);
 
   return (
-    <div className="flex items-center justify-center h-screen lg:bg-zinc-100 border">
+    <div className="flex items-center justify-center h-screen lg:bg-zinc-100">
       <Routes>
         <Route path="/Tailwind-Practice/" element={<AppComponents />} />
         <Route path="/Tailwind-Practice/signup" element={<SignUp />} />

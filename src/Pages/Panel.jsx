@@ -2,7 +2,7 @@
 
 function Panel() {
   return (
-    <div>
+    <div className="h-full ">
       Home
     </div>
   );

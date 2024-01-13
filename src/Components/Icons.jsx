@@ -6,5 +6,5 @@ export const Icons = ({ css, icon }) => {
 
 Icons.propTypes = {
   css: PropTypes.string.isRequired,
-  icon: PropTypes.string.isRequired,
+  icon: PropTypes.object.isRequired,
 };
