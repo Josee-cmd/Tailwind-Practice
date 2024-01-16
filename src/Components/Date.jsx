@@ -1,6 +1,5 @@
 export const DateComponent = () => {
   const currentDate = () => {
-    const fechaActual = new Date();
     //Creamos los semanas de la semana
     const semanas = [
       "Lunes",
@@ -28,6 +27,8 @@ export const DateComponent = () => {
       "Diciembre",
     ];
 
+    const fechaActual = new Date();
+
     //Obtenemos el dia de la semana
     const semana = fechaActual.getDay();
     //Obtenemos el mes
@@ -42,5 +43,5 @@ export const DateComponent = () => {
     return fullYear;
   };
 
-  return <div>{currentDate()}</div>;
+  return <p>{currentDate()}</p>;
 };
