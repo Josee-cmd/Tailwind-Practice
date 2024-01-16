@@ -26,7 +26,7 @@ export const DateComponent = () => {
       "Noviembre",
       "Diciembre",
     ];
-
+    //Obtenemos la fecha y hora actual
     const fechaActual = new Date();
 
     //Obtenemos el dia de la semana
