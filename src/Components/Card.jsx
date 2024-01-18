@@ -17,7 +17,7 @@ export const Card = ({ src, content = "Default" }) => {
         <hr className="border border-gray-300 my-10 w-40" />
       </div>
       <div className="flex justify-center items-center">
-        <Link className="text-2xl text-ellipsis overflow-hidden text-center font-semibold">{content}</Link>
+        <Link className="text-xl tracking-wide overflow-hidden text-center font-semibold">{content}</Link>
       </div>
     </div>
   );

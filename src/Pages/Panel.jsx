@@ -10,36 +10,39 @@ import { useRef } from "react";
 /*-----------------------------------------------------*/
 function Panel() {
   const imgRef = useRef();
+  const p = useRef();
   const handleChanges = (e) => {
     const fileInput = e.target;
-    const img = imgRef.current;
-
     if (fileInput.files[0]) {
       const reader = new FileReader();
       reader.onload = (e) => {
-        img.src = e.target.result;
+        imgRef.current.src = e.target.result;
+        imgRef.current.style.width = '3rem';
+        imgRef.current.style.height = '3rem';
       };
       reader.readAsDataURL(e.target.files[0]);
     } else {
       // Si no se selecciona un archivo, establece la imagen de fondo con la imagen de "plus"
-      img.src = plus;
+      imgRef.current.src = plus;
+      imgRef.current.style.width = '20px';
+      imgRef.current.style.height = '20px'
     }
   };
   return (
     <div className="h-full grid grid-cols-2 gap-x-4 gap-y-1 pb-16 mx-3">
       <div className="text-4xl flex justify-start items-center pl-2 my-5 ">
-        <p>
+        <p ref={p}>
           Hey, <b>Jose</b>
         </p>
       </div>
       <div className="flex justify-end items-center flex-wrap">
-        <div className="w-20 h-20 border border-gray-500 rounded-full flex justify-center items-center flex-wrap ">
+        <div className="w-12 h-12 border border-gray-500 rounded-full flex justify-center items-center ">
           <label htmlFor="img" className="cursor-pointer">
             <img
               ref={imgRef}
               src={plus}
               alt="no found"
-              className="h-16 rounded-xl bg-cover bg-no-repeat bg-center"
+              className="w-5 rounded-full"
             />
           </label>
         </div>
@@ -50,10 +53,10 @@ function Panel() {
           className="hidden"
         />
       </div>
-      <div className="col-span-2 border border-black h-24 rounded-2xl text-xl flex justify-start pl-3 items-center my-2 font-medium">
+      <div className="col-span-2 border border-black h-20 rounded-2xl text-xl items-center font-medium">
         <DateComponent />
       </div>
-      <div className="col-span-2 w-full text-xl border border-black h-24 rounded-2xl flex justify-start items-center pl-3 font-medium">
+      <div className="col-span-2 w-full text-xl border border-black h-24 rounded-2xl flex justify- items-center pl-3 font-semibold tracking-wide">
         <h1>La proxima alarma sonara en: 8-HR</h1>
       </div>
       <Card src={notification} content="Alarmas" />
