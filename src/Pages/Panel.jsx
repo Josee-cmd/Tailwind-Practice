@@ -12,8 +12,7 @@ function Panel() {
   const imgRef = useRef();
   const p = useRef();
   const handleChanges = (e) => {
-    const fileInput = e.target;
-    if (fileInput.files[0]) {
+    if (e.target.files[0]) {
       const reader = new FileReader();
       reader.onload = (e) => {
         imgRef.current.src = e.target.result;
