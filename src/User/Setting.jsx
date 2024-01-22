@@ -7,6 +7,7 @@ import {
   faStar,
   faUsers,
   faClipboard,
+  faMoon,
 } from "@fortawesome/free-solid-svg-icons";
 import Alarm from "../assets/Icons/Alarma.png";
 import { Icons } from "../Components/Icons";
@@ -117,6 +118,15 @@ function Setting() {
             icon={faClipboard}
           />
           <Link className={`mx-3`}>Historial</Link>
+        </div>
+        <div className={`flex flex-row px-3 items-center my-5`}>
+          <Icons
+            css={`
+              ${css}
+            `}
+            icon={faMoon}
+          />
+          <Link className={`mx-3`}>Modo oscuro</Link>
         </div>
       </section>
     </main>
