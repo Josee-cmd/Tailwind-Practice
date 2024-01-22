@@ -51,7 +51,7 @@ function Setting() {
       <section className="my-5 pl-3 h-36  font-medium border-b-4 border-gray-300">
         <div className="flex justify-between">
           <p>Tu cuenta</p>
-          <p className="logo">Josan</p>
+          <p className="logo pr-4">Josan</p>
         </div>
         <div className={`flex flex-row px-2 items-center mt-5`}>
           <Icons
@@ -82,7 +82,7 @@ function Setting() {
             `}
             icon={faClock}
           />
-          <Link className={`${p}`}>Alarmas</Link>
+          <Link className={`${p}`}>Tiempo en la app</Link>
         </div>
       </section>
       <section className="my-5 pl-3 h-40 font-medium">
