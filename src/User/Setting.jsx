@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 /*-----------------------------------------*/
 function Setting() {
   const css = "text-xl";
-  const stylesDiv = "flex flex-row px-2 items-center my-5"
+  const stylesDiv = "flex flex-row px-2 items-center my-5";
   const p = "px-2";
   return (
     <main className="h-full ">
@@ -49,7 +49,10 @@ function Setting() {
         </div>
       </section>
       <section className="my-5 pl-3 h-36  font-medium border-b-4 border-gray-300">
-        <p>Tu cuenta</p>
+        <div className="flex justify-between">
+          <p>Tu cuenta</p>
+          <p className="logo">Josan</p>
+        </div>
         <div className={`flex flex-row px-2 items-center mt-5`}>
           <Icons
             css={`
