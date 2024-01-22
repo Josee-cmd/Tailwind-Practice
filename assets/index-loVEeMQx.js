@@ -836,13 +836,13 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
               ${e}
             `,icon:D1})}),v.jsx("p",{className:"pl-3 font-semibold",children:"Configuraciones y privacidad"})]}),v.jsx("section",{className:"flex justify-center items-center h-12  my-5  flex-wrap  ",children:v.jsxs("div",{className:"w-80 flex items-center flex-wrap ",children:[v.jsx("label",{htmlFor:"search",className:"mx-5 absolute",children:v.jsx(we,{css:`
                 ${e}
-              `,icon:$1})}),v.jsx("input",{className:"pl-12 pb-1 w-full h-8 rounded-xl  border border-black  outline-none",type:"text",name:"search",id:"search",placeholder:"Buscar"})]})}),v.jsxs("section",{className:"my-5 pl-3 h-36  font-medium border-b-4 border-gray-300",children:[v.jsxs("div",{className:"flex justify-between",children:[v.jsx("p",{children:"Tu cuenta"}),v.jsx("p",{className:"logo",children:"Josan"})]}),v.jsxs("div",{className:"flex flex-row px-2 items-center mt-5",children:[v.jsx(we,{css:`
+              `,icon:$1})}),v.jsx("input",{className:"pl-12 pb-1 w-full h-8 rounded-xl  border border-black  outline-none",type:"text",name:"search",id:"search",placeholder:"Buscar"})]})}),v.jsxs("section",{className:"my-5 pl-3 h-36  font-medium border-b-4 border-gray-300",children:[v.jsxs("div",{className:"flex justify-between",children:[v.jsx("p",{children:"Tu cuenta"}),v.jsx("p",{className:"logo pr-4",children:"Josan"})]}),v.jsxs("div",{className:"flex flex-row px-2 items-center mt-5",children:[v.jsx(we,{css:`
               ${e}
             `,icon:Y1}),v.jsx(se,{className:`${n}`,children:"Centro de cuentas"})]}),v.jsx("small",{className:"px-9",children:"Contraseñas, seguridad, datos personales"})]}),v.jsxs("section",{className:"my-5 pl-3 h-36  font-medium border-b-4 border-gray-300",children:[v.jsx("p",{children:"Como usas Josan"}),v.jsxs("div",{className:`${t} my-2`,children:[v.jsx(we,{css:`
               ${e}
             `,icon:V1}),v.jsx(se,{className:`${n}`,children:"Notificaciones"})]}),v.jsxs("div",{className:`${t} my-2`,children:[v.jsx(we,{css:`
               ${e}
-            `,icon:B1}),v.jsx(se,{className:`${n}`,children:"Alarmas"})]})]}),v.jsxs("section",{className:"my-5 pl-3 h-40 font-medium",children:[v.jsx("p",{children:"Más información y asistencia"}),v.jsxs("div",{className:`${t}`,children:[v.jsx(we,{css:`
+            `,icon:B1}),v.jsx(se,{className:`${n}`,children:"Tiempo en la app"})]})]}),v.jsxs("section",{className:"my-5 pl-3 h-40 font-medium",children:[v.jsx("p",{children:"Más información y asistencia"}),v.jsxs("div",{className:`${t}`,children:[v.jsx(we,{css:`
               ${e}
             `,icon:fp}),v.jsx(se,{className:`${n}`,children:"Favoritos"})]}),v.jsxs("div",{className:`${t} `,children:[v.jsx("img",{className:`${e}`,src:Q1,alt:"Not Found"}),v.jsx(se,{className:`${n}`,children:"Alarmas"})," "]}),v.jsxs("div",{className:`${t} `,children:[v.jsx(we,{css:`
               ${e}
