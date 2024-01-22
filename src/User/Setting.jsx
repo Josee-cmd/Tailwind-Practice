@@ -14,11 +14,11 @@ import { Link } from "react-router-dom";
 /*-----------------------------------------*/
 function Setting() {
   const css = "text-xl";
-  const styles = "flex flex-row px-2 items-center ";
+  const stylesDiv = "flex flex-row px-2 items-center my-5"
   const p = "px-2";
   return (
     <main className="h-full ">
-      <section className="h-10 flex items-center pl-5 border-b border-gray-300 ">
+      <section className="h-14 flex items-center pl-5 border-b-4 border-gray-300 ">
         <Link to="/Tailwind-Practice/panel/home">
           <Icons
             css={`
@@ -29,7 +29,7 @@ function Setting() {
         </Link>
         <p className="pl-3 font-semibold">Configuraciones y privacidad</p>
       </section>
-      <section className="flex justify-center items-center h-12  my-5  flex-wrap ">
+      <section className="flex justify-center items-center h-12  my-5  flex-wrap  ">
         <div className="w-80 flex items-center flex-wrap ">
           <label htmlFor="search" className="mx-5 absolute">
             <Icons
@@ -48,9 +48,9 @@ function Setting() {
           />
         </div>
       </section>
-      <section className="my-5 pl-3 h-36  font-medium border-b border-gray-300">
+      <section className="my-5 pl-3 h-36  font-medium border-b-4 border-gray-300">
         <p>Tu cuenta</p>
-        <div className={`${styles}`}>
+        <div className={`flex flex-row px-2 items-center mt-5`}>
           <Icons
             css={`
               ${css}
@@ -61,9 +61,9 @@ function Setting() {
         </div>
         <small className="px-9">Contraseñas, seguridad, datos personales</small>
       </section>
-      <section className="my-5 pl-3 h-36  font-medium border-b border-gray-300">
+      <section className="my-5 pl-3 h-36  font-medium border-b-4 border-gray-300">
         <p>Como usas Josan</p>
-        <div className={`${styles}`}>
+        <div className={`${stylesDiv} my-2`}>
           <Icons
             css={`
               ${css}
@@ -72,7 +72,7 @@ function Setting() {
           />
           <Link className={`${p}`}>Notificaciones</Link>
         </div>
-        <div className={`${styles} my-2`}>
+        <div className={`${stylesDiv} my-2`}>
           <Icons
             css={`
               ${css}
@@ -83,7 +83,8 @@ function Setting() {
         </div>
       </section>
       <section className="my-5 pl-3 h-40 font-medium">
-        <div className={`${styles}`}>
+        <p>Más información y asistencia</p>
+        <div className={`${stylesDiv}`}>
           <Icons
             css={`
               ${css}
@@ -92,11 +93,11 @@ function Setting() {
           />
           <Link className={`${p}`}>Favoritos</Link>
         </div>
-        <div className={`${styles} my-2`}>
+        <div className={`${stylesDiv} `}>
           <img className={`${css}`} src={Alarm} alt="Not Found" />
-          <p className={`${p}`}>Alarmas</p>{" "}
+          <Link className={`${p}`}>Alarmas</Link>{" "}
         </div>
-        <div className={`${styles} my-2 `}>
+        <div className={`${stylesDiv} `}>
           <Icons
             css={`
               ${css}
