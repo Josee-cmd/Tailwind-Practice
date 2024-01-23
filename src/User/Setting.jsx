@@ -18,8 +18,8 @@ function Setting() {
   const stylesDiv = "flex flex-row px-2 items-center my-5";
   const p = "px-2";
   return (
-    <main className="main 
-      flex flex-col flex-wrap overflow-y-auto">
+    <main className="h-full w-full
+      flex flex-col overflow-y-auto">
       <section className="h-14 flex items-center pl-5 border-b-4 border-gray-300 ">
         <Link to="/Tailwind-Practice/panel/home">
           <Icons
@@ -32,8 +32,8 @@ function Setting() {
         <p className="pl-3 font-semibold">Configuraciones y privacidad</p>
       </section>
       <section className="flex justify-center items-center h-12  my-5  flex-wrap  ">
-        <div className="w-80 flex items-center flex-wrap ">
-          <label htmlFor="search" className="mx-5 absolute">
+        <div className="w-80 flex items-center flex-wrap  ">
+          <label htmlFor="search" className="top-7 mx-5 relative">
             <Icons
               css={`
                 ${css}
