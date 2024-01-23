@@ -7,7 +7,7 @@ import {
   faStar,
   faUsers,
   faClipboard,
-  faMoon,
+  faToggleOff,
 } from "@fortawesome/free-solid-svg-icons";
 import Alarm from "../assets/Icons/Alarma.png";
 import { Icons } from "../Components/Icons";
@@ -18,8 +18,10 @@ function Setting() {
   const stylesDiv = "flex flex-row px-2 items-center my-5";
   const p = "px-2";
   return (
-    <main className="h-full w-full
-      flex flex-col overflow-y-auto">
+    <main
+      className="h-full w-full
+      flex flex-col overflow-y-auto"
+    >
       <section className="h-14 flex items-center pl-5 border-b-4 border-gray-300 ">
         <Link to="/Tailwind-Practice/panel/home">
           <Icons
@@ -62,7 +64,9 @@ function Setting() {
             `}
             icon={faCircleUser}
           />
-          <Link className={`${p}`}>Centro de cuentas</Link>
+          <Link to="profile-user" className={`${p}`}>
+            Centro de cuentas
+          </Link>
         </div>
         <small className="px-9">Contraseñas, seguridad, datos personales</small>
       </section>
@@ -99,7 +103,7 @@ function Setting() {
           <Link className={`${p}`}>Favoritos</Link>
         </div>
         <div className={`${stylesDiv} `}>
-          <img className={`${css}`} src={Alarm} alt="Not Found" />
+          <img className={`h-6`} src={Alarm} alt="Not Found" />
           <Link className={`${p}`}>Alarmas</Link>{" "}
         </div>
         <div className={`${stylesDiv} `}>
@@ -125,7 +129,7 @@ function Setting() {
             css={`
               ${css}
             `}
-            icon={faMoon}
+            icon={faToggleOff}
           />
           <Link className={`mx-3`}>Modo oscuro</Link>
         </div>

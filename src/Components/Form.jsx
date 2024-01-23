@@ -32,7 +32,7 @@ function Form() {
           className="border border-gray-300 p-2 my-2 rounded-lg outline-none lg:mx-4 pl-4 lg:p-3 focus:border-blue-500"
         />
         <Link
-        to = "/Tailwind-Practice/panel"
+        to = "/Tailwind-Practice/panel/home"
         className="p-2 bg-blue-500 text-white lg:mx-4 rounded-lg mt-4 lg:p-3 text-xl font-bold text-center"
         >
           Iniciar sesión

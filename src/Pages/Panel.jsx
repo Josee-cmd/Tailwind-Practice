@@ -5,7 +5,7 @@ import recipe from "../assets/Icons/receta.png";
 import assistant from "../assets/Icons/asistente-personal.png";
 import plus from "../assets/Icons/mas.png";
 import { DateComponent } from "../Components/Date";
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 
 /*-----------------------------------------------------*/
 function Panel() {
@@ -15,18 +15,38 @@ function Panel() {
     if (e.target.files[0]) {
       const reader = new FileReader();
       reader.onload = (e) => {
+        const url = e.target.result;
         imgRef.current.src = e.target.result;
-        imgRef.current.style.width = '3rem';
-        imgRef.current.style.height = '3rem';
+        imgRef.current.style.width = "3rem";
+        imgRef.current.style.height = "3rem";
+
+        const dataJson = JSON.stringify(url);
+        localStorage.setItem("user", dataJson);
       };
       reader.readAsDataURL(e.target.files[0]);
     } else {
       // Si no se selecciona un archivo, establece la imagen de fondo con la imagen de "plus"
+
       imgRef.current.src = plus;
-      imgRef.current.style.width = '20px';
-      imgRef.current.style.height = '20px'
+      imgRef.current.style.width = "20px";
+      imgRef.current.style.height = "20px";
     }
   };
+
+  const recoverData = () => {
+    const data = localStorage.getItem("user");
+    if (data) {
+      const dataSave = JSON.parse(data);
+      imgRef.current.src = dataSave;
+    } else {
+      console.log("La url esta daña");
+    }
+  };
+
+  useEffect(() => {
+    recoverData();
+  }, []);
+
   return (
     <div className="h-full grid grid-cols-2 gap-x-4 gap-y-1 pb-16 mx-3">
       <div className="text-4xl flex justify-start items-center pl-2 my-5 ">
@@ -41,7 +61,7 @@ function Panel() {
               ref={imgRef}
               src={plus}
               alt="no found"
-              className="w-5 rounded-full"
+              className="w-14 rounded-full"
             />
           </label>
         </div>

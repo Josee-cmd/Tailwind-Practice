@@ -8,7 +8,9 @@ import { useState, useEffect } from "react";
 import { Protected } from "./Components/Protected";
 import Setting from "./User/Setting";
 import NavBar from "./Components/NavBar";
-import Panel from './Pages/Panel'
+import Panel from "./Pages/Panel";
+import Favorite from "./Components/Favorite";
+import ProfileUser from "./User/ProfileUser";
 /*---------------------------------------------------------------------------------*/
 
 function App() {
@@ -33,8 +35,10 @@ function App() {
           }
         >
           <Route path="/Tailwind-Practice/panel" element={<NavBar />}>
-            <Route path = "home" element = {<Panel/>}/>
-            <Route path="User-Setting" element={<Setting />}></Route>
+            <Route path="home" element={<Panel />} />
+            <Route path="User-Setting" element={<Setting />}/>
+            <Route path="User-Setting/profile-user" element={<ProfileUser />} />
+            <Route path="favorite" element={<Favorite />} />
           </Route>
         </Route>
 

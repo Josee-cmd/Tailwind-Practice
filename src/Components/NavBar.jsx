@@ -10,7 +10,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 /*-----------------------------------------------------------------*/
 function NavBar() {
-  const css = "icons lg:text-xl lg:pr-2";
+  const css = "icons lg:text-xl lg:pr-2"; 
+
   return (
     <div className="w-full h-full grid grid-rows-2">
       <div className="h-full row-span-2">
@@ -41,7 +42,7 @@ function NavBar() {
             </Link>
           </li>
           <li>
-            <Link to="user-create">
+            <Link to = "Mas">
               {" "}
               <Icons
                 css={`
@@ -64,7 +65,7 @@ function NavBar() {
             </Link>
           </li>
           <li>
-            <Link to="user-theme">
+            <Link to="favorite">
               {" "}
               <Icons
                 css={`
