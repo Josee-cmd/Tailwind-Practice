@@ -38,6 +38,8 @@ function Panel() {
     if (data) {
       const dataSave = JSON.parse(data);
       imgRef.current.src = dataSave;
+      imgRef.current.style.width = "3rem";
+      imgRef.current.style.height = "3rem";
     } else {
       console.log("La url esta daña");
     }
@@ -61,7 +63,7 @@ function Panel() {
               ref={imgRef}
               src={plus}
               alt="no found"
-              className="w-14 rounded-full"
+              className="w-5 rounded-full"
             />
           </label>
         </div>
