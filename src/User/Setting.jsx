@@ -19,7 +19,7 @@ function Setting() {
   const p = "px-2";
   return (
     <main className="h-full
-     w-full flex flex-col flex-wrap overflow-y-auto overflow-x-hidden">
+      flex flex-col flex-wrap overflow-y-auto overflow-x-hidden">
       <section className="h-14 flex items-center pl-5 border-b-4 border-gray-300 ">
         <Link to="/Tailwind-Practice/panel/home">
           <Icons
