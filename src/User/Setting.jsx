@@ -131,7 +131,7 @@ function Setting() {
             `}
             icon={faToggleOff}
           />
-          <Link className={`mx-3`}>Modo oscuro</Link>
+          <Link className={`mx-1`}>Tema</Link>
         </div>
       </section>
     </main>
