@@ -12,11 +12,11 @@ import {
 function NavBar() {
   const css = "icons lg:text-xl lg:pr-2";
   return (
-    <div className="w-full h-full grid grid-rows-2 ">
+    <div className="w-full h-full grid grid-rows-2">
       <div className="h-full row-span-2">
       <Outlet />
       </div>
-      <nav className="w-full h-full flex items-end border-t-2 border-gray-400 rounded-2xl ">
+      <nav className="w-full h-full flex items-end border-t-2 border-gray-400 rounded-2xl">
         <ul className="w-full h-auto flex pl-10 gap-5 justify-center ">
           <li>
             <Link to="home">

@@ -18,7 +18,8 @@ function Setting() {
   const stylesDiv = "flex flex-row px-2 items-center my-5";
   const p = "px-2";
   return (
-    <main className="h-full ">
+    <main className="h-full
+     w-full flex flex-col flex-wrap overflow-y-auto">
       <section className="h-14 flex items-center pl-5 border-b-4 border-gray-300 ">
         <Link to="/Tailwind-Practice/panel/home">
           <Icons
