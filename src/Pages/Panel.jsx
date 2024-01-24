@@ -95,12 +95,12 @@ function Panel() {
         <div
           className={`${
             change ? "items " : "itemsHide"
-          } invisible border border-black rounded-xl w-full h-0 flex flex-col flex-wrap `}
+          } invisible border border-black rounded-xl w-full h-0 grid grid-rows-3 `}
         >
           <div className={`${change ? 'visible ':''} invisible flex justify-end pr-2 py-2`}>
             <img src={close} alt="no found" onClick={handleClass}/>
           </div>
-          <div className={`${change ? 'visible ':''} invisible h-28 flex flex-col justify-center items-center  text-lg font-medium`}>
+          <div className={`${change ? 'visible ':''} invisible h-28 flex flex-col justify-center items-center  text-lg font-medium `}>
             <Link to = "NoFound">Añadir alarma</Link>
             <Link to = "NoFound">Añardir Asistente</Link>
           </div>
