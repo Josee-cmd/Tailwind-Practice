@@ -2,17 +2,37 @@ import { Year } from "../Components/year";
 import { Days } from "../Components/Dyas";
 import { Month } from "../Components/Month";
 import { Gender } from "../Components/Gender";
-/*-------------------------------------*/
+import { faCircleXmark } from "@fortawesome/free-regular-svg-icons";
+import { Icons } from "../Components/Icons";
+import { Link } from "react-router-dom";
+/*----------------------------------------------------------*/
 function SignUp() {
+  const css = "text-4xl";
+
   return (
     <form
       action=""
       className="w-96 h-5/6 border border-white grid grid-cols-2 grid-rows-7 lg:bg-white shadow-2xl shadow-black-500 rounded-xl"
     >
-      <div className="row-span-1 col-span-2 my-4 lg:my-0">
-        <h1 className="text-4xl font-bold pl-3 my-1">Registrarte</h1>
-        <h4 className="font-light pl-3">Es rápido y fácil</h4>
-      </div>
+      <header className=" row-span-1 col-span-2 my-4 lg:my-0">
+        <div className="flex justify-between flex-wrap h-full">
+          <div className="flex flex-col flex-wrap">
+            <h1 className="text-4xl font-bold pl-3 my-1">Registrarte</h1>
+            <h4 className="font-light pl-3">Es rápido y fácil</h4>
+          </div>
+          <div className="flex justify-center items-center pr-5">
+            <Link to = "/Tailwind-Practice/">
+              {" "}
+              <Icons
+                css={`
+                  ${css}
+                `}
+                icon={faCircleXmark}
+              />
+            </Link>
+          </div>
+        </div>
+      </header>
       <div className="col-span-2 h-20 flex items-center justify-center gap-3 flex-wrap border-t border-gray-300 ">
         <input
           type="text"
@@ -41,10 +61,7 @@ function SignUp() {
       </div>
 
       <div className="col-span-2 ">
-        <label
-          htmlFor=""
-          className="text-xs pl-2 text-gray-500"
-        >
+        <label htmlFor="" className="text-xs pl-2 text-gray-500">
           <b>Fecha de nacimiento ?</b>
         </label>
         <div className=" flex items-center justify-between ">

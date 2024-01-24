@@ -5,12 +5,20 @@ import recipe from "../assets/Icons/receta.png";
 import assistant from "../assets/Icons/asistente-personal.png";
 import plus from "../assets/Icons/mas.png";
 import { DateComponent } from "../Components/Date";
-import { useRef, useEffect } from "react";
-
+import { useRef, useEffect, useState } from "react";
+import mas from "../assets/Icons/plus.png";
+import close from "../assets/Icons/cerrar.png";
+import { Link } from "react-router-dom";
 /*-----------------------------------------------------*/
 function Panel() {
+  const [change, setChange] = useState(false);
+
   const imgRef = useRef();
   const p = useRef();
+
+  const handleClass = () => {
+    setChange(!change);
+  };
   const handleChanges = (e) => {
     if (e.target.files[0]) {
       const reader = new FileReader();
@@ -83,6 +91,27 @@ function Panel() {
       <Card src={notification} content="Alarmas" />
       <Card src={recipe} content="Recetas médica" />
       <Card src={assistant} content="Asistente" />
+      <div className="flex justify-center items-center w-full h-40">
+        <div
+          className={`${
+            change ? "items " : "itemsHide"
+          } invisible border border-black rounded-xl w-full h-0 flex flex-col flex-wrap `}
+        >
+          <div className={`${change ? 'visible ':''} invisible flex justify-end pr-2 py-2`}>
+            <img src={close} alt="no found" onClick={handleClass}/>
+          </div>
+          <div className={`${change ? 'visible ':''} invisible h-28 flex flex-col justify-center items-center  text-lg font-medium`}>
+            <Link to = "NoFound">Añadir alarma</Link>
+            <Link to = "NoFound">Añardir Asistente</Link>
+          </div>
+        </div>
+        <img
+          src={mas}
+          alt="no found"
+          className={`${change ? "hide " : ""}absolute w-10`}
+          onClick={handleClass}
+        />
+      </div>
     </div>
   );
 }

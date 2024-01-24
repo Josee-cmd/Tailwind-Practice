@@ -9,6 +9,7 @@ import {
   faClipboard,
   faToggleOff,
 } from "@fortawesome/free-solid-svg-icons";
+import { faPaperPlane, faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import Alarm from "../assets/Icons/Alarma.png";
 import { Icons } from "../Components/Icons";
 import { Link } from "react-router-dom";
@@ -72,7 +73,7 @@ function Setting() {
       </section>
       <section className="my-5 pl-3 h-36  font-medium border-b-4 border-gray-300">
         <p>Como usas Josan</p>
-        <div className={`${stylesDiv} my-2`}>
+        <div className={`${stylesDiv}`}>
           <Icons
             css={`
               ${css}
@@ -81,7 +82,7 @@ function Setting() {
           />
           <Link className={`${p}`}>Notificaciones</Link>
         </div>
-        <div className={`${stylesDiv} my-2`}>
+        <div className={`${stylesDiv}`}>
           <Icons
             css={`
               ${css}
@@ -93,45 +94,63 @@ function Setting() {
       </section>
       <section className="my-5 pl-3 h-40 font-medium">
         <p>Más información y asistencia</p>
-        <div className={`${stylesDiv}`}>
+        <div className={`flex flex-row px-1 items-center my-5`}>
           <Icons
             css={`
               ${css}
             `}
             icon={faStar}
           />
-          <Link className={`${p}`}>Favoritos</Link>
+          <Link className={`px-4`}>Favoritos</Link>
         </div>
-        <div className={`${stylesDiv} `}>
+        <div className={`flex flex-row px-1 items-center my-5`}>
           <img className={`h-6`} src={Alarm} alt="Not Found" />
-          <Link className={`${p}`}>Alarmas</Link>{" "}
+          <Link className={`alarm`}>Alarmas</Link>{" "}
         </div>
-        <div className={`${stylesDiv} `}>
+        <div className={`flex flex-row px-1 items-center my-5`}>
           <Icons
             css={`
               ${css}
             `}
             icon={faUsers}
           />
-          <Link className={`${p}`}>Asistentes</Link>
+          <Link className={`assistant`}>Asistentes</Link>
         </div>
-        <div className={`flex flex-row px-3 items-center`}>
+        <div className={`${stylesDiv}`}>
           <Icons
             css={`
               ${css}
             `}
             icon={faClipboard}
           />
-          <Link className={`mx-3`}>Historial</Link>
+          <Link className={`px-5`}>Historial</Link>
         </div>
-        <div className={`flex flex-row px-3 items-center my-5`}>
+        <div className={`${stylesDiv}`}>
           <Icons
             css={`
               ${css}
             `}
             icon={faToggleOff}
           />
-          <Link className={`mx-1`}>Tema</Link>
+          <Link className={`px-3`}>Tema</Link>
+        </div>
+        <div className={`${stylesDiv} `}>
+          <Icons
+            css={`
+              ${css}
+            `}
+            icon={faPaperPlane}
+          />
+          <Link className={`px-4`}>Compartir</Link>
+        </div>
+        <div className={`${stylesDiv}`}>
+          <Icons
+            css={`
+              ${css}
+            `}
+            icon={faEnvelope}
+          />
+          <Link className={`px-4`}>Contactenos</Link>
         </div>
       </section>
     </main>
