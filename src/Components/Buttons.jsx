@@ -6,10 +6,11 @@ export const Buttons = (props) => {
             style={{
                 width: '14rem',
                 height:'2.9rem',
-                fontSize: '20px',
+                fontSize: '16px',
                 background: '#22C55E',
                 color: '#fff',
                 borderRadius: '10px',
+                fontWeight: 'bold',
                 ...style,
             }}
         >
