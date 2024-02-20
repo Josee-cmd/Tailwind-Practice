@@ -11,6 +11,7 @@ import NavBar from "./Components/NavBar";
 import Panel from "./Pages/Panel";
 import Favorite from "./Components/Favorite";
 import ProfileUser from "./User/ProfileUser";
+import {Assistant} from './Pages/Assistant'
 /*---------------------------------------------------------------------------------*/
 
 function App() {
@@ -36,12 +37,12 @@ function App() {
         >
           <Route path="/Tailwind-Practice/panel" element={<NavBar />}>
             <Route path="home" element={<Panel />} />
-            <Route path="User-Setting" element={<Setting />}/>
+            <Route path="User-Setting" element={<Setting />} />
             <Route path="User-Setting/profile-user" element={<ProfileUser />} />
             <Route path="favorite" element={<Favorite />} />
           </Route>
         </Route>
-
+        <Route path = "/Tailwind-Practice/panel/Assistant" element = {<Assistant/>}/>
         <Route path="/Tailwind-Practice/*" element={<NoFound />} />
       </Routes>
     </div>
