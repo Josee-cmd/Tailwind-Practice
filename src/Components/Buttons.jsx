@@ -19,7 +19,7 @@ export const Buttons = (props) => {
     )
 }
 Buttons.propTypes = {
-    label: propTypes.string,
+    label: propTypes.string.isRequired,
     style: propTypes.object
 
 }

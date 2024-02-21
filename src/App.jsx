@@ -12,6 +12,7 @@ import Panel from "./Pages/Panel";
 import Favorite from "./Components/Favorite";
 import ProfileUser from "./User/ProfileUser";
 import {Assistant} from './Pages/Assistant'
+import {Medicines} from './Pages/Medicines'
 /*---------------------------------------------------------------------------------*/
 
 function App() {
@@ -43,6 +44,8 @@ function App() {
           </Route>
         </Route>
         <Route path = "/Tailwind-Practice/panel/Assistant" element = {<Assistant/>}/>
+        <Route path = "/Tailwind-Practice/panel/medicine" element = {<Medicines/>}/>
+
         <Route path="/Tailwind-Practice/*" element={<NoFound />} />
       </Routes>
     </div>
