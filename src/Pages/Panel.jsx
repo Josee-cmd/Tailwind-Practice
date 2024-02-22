@@ -101,7 +101,7 @@ function Panel() {
             <img src={close} alt="no found" onClick={handleClass}/>
           </div>
           <div className={`${change ? 'visible ':''} invisible h-28 flex flex-col justify-center items-center  text-lg font-medium `}>
-            <Link to = "NoFound">Añadir alarma</Link>
+            <Link to = "/Tailwind-Practice/panel/medicine">Añadir alarma</Link>
             <Link to = "/Tailwind-Practice/panel/Assistant">Añardir Asistente</Link>
           </div>
         </div>
