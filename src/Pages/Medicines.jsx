@@ -2,7 +2,7 @@ import { TypeMedicine } from '../Components/TypeMedicine'
 import {Buttons} from '../Components/Buttons'
 export const Medicines = () => {
     const styleInput = 'w-full p-3 border border-black my-2 rounded-lg outline-none';
-
+//Pils form
     return (
         <div className="w-full h-full my-8">
             <p className="logo mx-8">Josan</p>
