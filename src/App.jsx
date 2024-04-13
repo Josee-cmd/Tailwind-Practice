@@ -45,7 +45,6 @@ function App() {
         </Route>
         <Route path = "/Tailwind-Practice/panel/Assistant" element = {<Assistant/>}/>
         <Route path = "/Tailwind-Practice/panel/medicine" element = {<Medicines/>}/>
-
         <Route path="/Tailwind-Practice/*" element={<NoFound />} />
       </Routes>
     </div>
